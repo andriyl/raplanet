@@ -22,7 +22,14 @@ Schema.User = new SimpleSchema({
             type: "placecomplete",
             placecompleteOptions: {
                 allowClear: true,
-                requestParams: function(){},
+                requestParams: function(){
+                    var
+                    country = this.$("select").select2("val"),
+                    result  = {
+                        types: ['(cities)']
+                    };
+                    return result;
+                },
                 selectDetails: function(placeResult) {
                     $("input[name='place_id']").val(placeResult.place_id);
                     return null;
@@ -40,4 +47,7 @@ Schema.User = new SimpleSchema({
 });
 
 Meteor.users.attachSchema(Schema.User);
-AutoForm.setDefaultTemplate("bootstrap3");
+
+//if(Meteor.isClient) {
+//    AutoForm.setDefaultTemplate("bootstrap3");
+//}

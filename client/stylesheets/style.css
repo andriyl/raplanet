@@ -56,10 +56,10 @@ code {font-size: 80%;}
 .formBox .btn {width: 100%; border-radius: 0;}
 
 .planetLocations {
-    padding: 10px 0;
+    padding: 6px 0;
     background: #94ff5e;
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     color: #314D68;
 }
 .footer {
@@ -68,5 +68,6 @@ code {font-size: 80%;}
     width: 100%;
     height: 60px;
     background-color: #ddd;
+    color: #314D68;
 }
 .footer > .container {padding-right: 15px; padding-left: 15px;}
