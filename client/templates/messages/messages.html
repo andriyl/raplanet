@@ -11,6 +11,7 @@
                         <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
                             <div>
                                 <span class="user">{{user.profile.username}}</span>
+                                <span class="time"><i class="fa fa-clock-o"></i> {{messageDate createdAt}}</span>
                             </div>
                             <span class="message-content">
                                 {{text}}
@@ -21,4 +22,16 @@
             </div>
         </div>
     </div>
+    <section class="formBox">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-8">
+                    <form class="form-horizontal">
+                        <textarea id="post" class="form-control" rows="5" placeholder="Rap me"></textarea>
+                        <button type="submit" class="btn btn-success">Rap me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>

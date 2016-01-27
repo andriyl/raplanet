@@ -5,27 +5,13 @@ body > .container {padding: 60px 15px 0;}
 .main {padding-top: 50px;}
 code {font-size: 80%;}
 
-.map-container{width: 100%; height: 600px;}
-
-.map-container       {width: 100%; height: 600px;}
-.aside-map-container {width: 100%; height: 200px; border: 3px solid #fff;}
-
-.aside-map-header{
-    background: #fff;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #314D68;
-    border-top: 2px solid #1b809e;
-}
-
-.planetLocations {
-    padding: 10px 0;
-    background: #94ff5e;
-    text-align: center;
-    font-size: 24px;
-    color: #314D68;
-}
+.topBar {background: #314D68;}
+.topBar .navbar-brand,
+.topBar .navbar-nav > li > a {color: #F3F9FF;}
+.topBar .navbar-brand:hover,
+.topBar .navbar-brand:focus,
+.topBar .navbar-nav > li > a:hover,
+.topBar .navbar-nav > li > a:focus {color: #CEE3F6;}
 
 .bs-callout {
     padding: 10px 20px;
@@ -45,6 +31,37 @@ code {font-size: 80%;}
 .bs-callout:nth-child(2n+1){float: left; margin-right: 10px;}
 .bs-callout:nth-child(2n)  {float: right; margin-left: 10px; margin-right: 1%;}
 
+.posts {overflow-y: scroll; height: 400px;}
+.user {font-size: 20px; color: #314D68;}
+.time {float: right; font-size: 16px; color: #a94442;}
+
+.map-container       {width: 100%; height: 600px;}
+.aside-map-container {width: 100%; height: 200px; border: 3px solid #fff;}
+
+.aside-map-header{
+    background: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #314D68;
+    border-top: 2px solid #1b809e;
+}
+.formBox{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    background: #D0D0D0;
+    padding: 10px 0;
+}
+.formBox .btn {width: 100%; border-radius: 0;}
+
+.planetLocations {
+    padding: 10px 0;
+    background: #94ff5e;
+    text-align: center;
+    font-size: 24px;
+    color: #314D68;
+}
 .footer {
     position: absolute;
     bottom: 0;

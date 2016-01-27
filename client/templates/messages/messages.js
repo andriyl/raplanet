@@ -1,11 +1,11 @@
 Template.messages.helpers({
     posts: function() {
         var
-        locationId = Locations.findOne({place_id: Meteor.user().place_id}),
+            locationId = Locations.findOne({place_id: Meteor.user().place_id}),
 
-        posts = Messages.find({location_id: locationId}, {sort: {createdAt: -1}}).fetch();
+            posts = Messages.find({location_id: locationId}, {sort: {createdAt: -1}}).fetch();
         posts.map(function(post){
-             post.user = Meteor.users.findOne({_id: post.user_id},{fields: {profile: 1}});
+            post.user = Meteor.users.findOne({_id: post.user_id},{fields: {profile: 1}});
         });
 
         return posts;
