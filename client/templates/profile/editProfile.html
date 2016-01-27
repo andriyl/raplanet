@@ -1,0 +1,14 @@
+<head>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.js"></script>
+</head>
+
+<template name="editProfile">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-8">
+                {{> quickForm collection="Meteor.users" doc=currentUser id="updateUserForm" type="update"}}
+            </div>
+        </div>
+    </div>
+</template>
