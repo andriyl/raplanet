@@ -1,0 +1,23 @@
+<template name="messages">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="aside-map-header">{{place}}</div>
+            </div>
+            <div class="col-lg-8">
+                <div class="posts">
+                    {{#each posts}}
+                        <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
+                            <div>
+                                <span class="user">{{user.profile.username}}</span>
+                            </div>
+                            <span class="message-content">
+                                {{text}}
+                            </span>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
