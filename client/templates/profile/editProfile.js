@@ -47,7 +47,3 @@ Schema.User = new SimpleSchema({
 });
 
 Meteor.users.attachSchema(Schema.User);
-
-//if(Meteor.isClient) {
-//    AutoForm.setDefaultTemplate("bootstrap3");
-//}
