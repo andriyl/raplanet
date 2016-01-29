@@ -1,0 +1,15 @@
+{
+  "GOOGLE_API_KEY": "",
+  "public": {
+    "errorPage": {
+      "p403": {
+        "title": "403 Access Denied",
+        "message": "Sorry, you are not have permision to be on this page!"
+      },
+      "p404": {
+        "title": "404 Not Found",
+        "message": "Sorry, you are not on the same planet!"
+      }
+    }
+  }
+}

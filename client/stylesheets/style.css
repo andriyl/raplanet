@@ -1,11 +1,13 @@
 html {position: relative; min-height: 100%;}
-body {background: #f2f4f8; margin-bottom: 60px;}
+body {background: #f2f4f8; margin-bottom: 60px; width: 100%;}
 body > .container {padding: 60px 15px 0;}
 .container .text-muted {margin: 20px 0;}
 .main {padding-top: 50px;}
-code {font-size: 80%;}
+code  {font-size: 80%;}
 
 .topBar {background: #314D68;}
+.topBar .logo {display: inline-block;}
+.topBar .navbar-brand {padding: 5px 15px;}
 .topBar .navbar-brand,
 .topBar .navbar-nav > li > a {color: #F3F9FF;}
 .topBar .navbar-brand:hover,
@@ -70,6 +72,9 @@ code {font-size: 80%;}
     color: #fff;
     text-align: center;
 }
+.error-template {padding: 40px 15px; text-align: center; color: #314D68;}
+.error-actions  {margin: 15px 0;}
+
 .profile {margin-top: 20px;}
 
 .footer {
@@ -80,4 +85,4 @@ code {font-size: 80%;}
     background-color: #ddd;
     color: #314D68;
 }
-.footer > .container {padding-right: 15px; padding-left: 15px;}
+.footer > .container {padding:0 15px;}
