@@ -6,7 +6,8 @@ Schema.User = new SimpleSchema({
     },
     emails: {
         type: Array,
-        optional: true
+        optional: true,
+        minCount: 1
     },
     "emails.$": {
         type: Object
@@ -22,10 +23,8 @@ Schema.User = new SimpleSchema({
             type: "placecomplete",
             placecompleteOptions: {
                 allowClear: true,
-                requestParams: function(){
-                    var
-                    country = this.$("select").select2("val"),
-                    result  = {
+                requestParams: function() {
+                    var result = {
                         types: ['(cities)']
                     };
                     return result;
