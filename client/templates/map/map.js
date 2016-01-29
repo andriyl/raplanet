@@ -5,7 +5,7 @@ Template.map.onCreated(function() {
 
         Locations.find().observe({
             added: function (document) {
-                var isMessages = Messages.count({location_id: document._id}).count();
+                var isMessages = Messages.find({location_id: document._id}).count();
 
                 if(document.place_id && isMessages) {
                     geocoder.geocode({'placeId': document.place_id}, function (results, status) {
