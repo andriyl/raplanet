@@ -16,7 +16,7 @@ code  {font-size: 80%;}
 .topBar .navbar-nav > li > a:focus {color: #CEE3F6;}
 
 .bs-callout {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 10px;
     margin: 5px 0;
     border: 1px solid #eee;
     border-left-width: 3px;
@@ -54,6 +54,7 @@ code  {font-size: 80%;}
     bottom: 60px;
     background: #D0D0D0;
     padding: 10px 0;
+    z-index: 9999;
 }
 .formBox .btn {width: 100%; border-radius: 0;}
 
@@ -76,6 +77,11 @@ code  {font-size: 80%;}
 .error-actions  {margin: 15px 0;}
 
 .profile {margin-top: 20px;}
+
+.user-avatar {
+    float: left;
+    margin-right: 10px;
+}
 
 .footer {
     position: absolute;

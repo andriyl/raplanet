@@ -16,6 +16,11 @@
                     {{#each posts}}
                         <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
                             <div>
+                                {{> avatar user=user
+                                    shape="circle"
+                                    class="user-avatar"
+                                    bgColor="#a7b249"
+                                }}
                                 <span class="user">{{user.profile.username}}</span>
                                 <span class="time"><i class="fa fa-clock-o"></i> {{messageDate createdAt}}</span>
                             </div>
