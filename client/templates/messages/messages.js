@@ -18,6 +18,9 @@ Template.messages.helpers({
     },
     isLocation: function() {
         return !(Meteor.user() && Meteor.user().place_id);
+    },
+    avatarColor: function(){
+        return "#a7b249";
     }
 });
 
